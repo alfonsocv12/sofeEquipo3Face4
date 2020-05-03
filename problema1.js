@@ -6,21 +6,18 @@ const array = [0, 1, 2, 4, 6, 7, 8, 11, 12, 14, 15, 16,
 ];
 //const array = [-3, -2, -1, 2, 10, 15,16 ,18,19,20];
 
-
 let contador = null;
 let array_seguido = [];
 let final_array = [];
 array.sort(function(a, b){return a-b});
 array.forEach((x,index) => {
     if(contador != null){
-      
         if(array.length -1 == index){
             if(array_seguido.length == 0){
                 array_seguido.push(contador);
             }
             array_seguido.push(x);
             if(array_seguido.length >= 3){
-                
                 final_array.push(array_seguido[0] + "-" + x);
             }else if(array_seguido.length == 2){
                 final_array.push(array_seguido[0]);
@@ -36,10 +33,8 @@ array.forEach((x,index) => {
             array_seguido.push(x);
         }else{
             if(array_seguido.length >= 3){
-                
                 final_array.push(array_seguido[0] + "-" + array_seguido[array_seguido.length - 1]);
             }else if(array_seguido.length == 2){
-               
                 final_array.push(array_seguido[0]);
                 final_array.push(array_seguido[1]);
             }else if(array_seguido.length == 0){
