@@ -11,5 +11,5 @@ Correr en una terminal con node instalado
 $ node problema1.js
 $ node problema2.js
 $ node problema3.js
-$ snode problema4.js
+$ node problema4.js
 ```
